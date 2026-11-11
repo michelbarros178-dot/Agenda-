@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chronocore-3d-agenda
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+

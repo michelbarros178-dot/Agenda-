@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#6900b3","tertiary-container":"#ffcdcf","surface-dim":"#0e131f","surface-tint":"#00dbe9","surface-container-lowest":"#080e1a","tertiary-fixed-dim":"#ffb2b7","primary-fixed":"#7df4ff","surface-container-low":"#161c28","inverse-on-surface":"#2b303d","surface-variant":"#2f3542","inverse-surface":"#dde2f3","on-error":"#690005","error-container":"#93000a","on-tertiary-container":"#bc0b3b","surface":"#0e131f","on-primary-fixed":"#002022","on-error-container":"#ffdad6","on-secondary-container":"#d6a9ff","on-surface-variant":"#b9cacb","surface-container-highest":"#2f3542","on-secondary-fixed":"#2c0051","outline":"#849495","secondary":"#ddb7ff","secondary-container":"#6f00be","surface-container-high":"#242a36","outline-variant":"#3b494b","inverse-primary":"#006970","on-primary-container":"#006970","on-secondary":"#490080","on-tertiary-fixed-variant":"#92002a","background":"#0e131f","on-tertiary-fixed":"#40000d","on-surface":"#dde2f3","primary":"#dbfcff","secondary-fixed-dim":"#ddb7ff","primary-container":"#00f0ff","on-tertiary":"#67001b","surface-bright":"#343946","secondary-fixed":"#f0dbff","surface-container":"#1a202c","error":"#ffb4ab","tertiary-fixed":"#ffdadb","on-primary":"#00363a","primary-fixed-dim":"#00dbe9","on-primary-fixed-variant":"#004f54","on-background":"#dde2f3","tertiary":"#fff3f2"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","margin":"2rem","space-xl":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","gutter-mobile":"1rem"},fontFamily:{"label-lg":["JetBrains Mono"],"body-lg":["Space Grotesk"],"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"label-sm":["JetBrains Mono"],"display-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"body-sm":["Space Grotesk"],"body-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"headline-md":["Space Grotesk"]},fontSize:{"label-lg":["0.875rem",{"lineHeight":"1.4","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.6","letterSpacing":"0","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["0.625rem",{"lineHeight":"1.2","letterSpacing":"0.12em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.08em","fontWeight":"500"}],"body-sm":["0.8125rem",{"lineHeight":"1.45","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.4","letterSpacing":"0","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between py-space-lg shadow-[0_0_30px_rgba(0,0,0,0.5)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container shadow-[0_0_15px_rgba(0,240,255,0.35)]"><span class="material-symbols-outlined text-[20px]">radar</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">CHRONO·CORE</span><span class="font-label-sm text-label-sm text-on-surface-variant">MISSION CONTROL SYS</span></div></div><div class="px-space-md flex flex-col gap-space-xs"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-widest text-outline">TELEMETRÍA &amp; NAVEGACIÓN</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="calendario-cuantico-matriz-de-compromisos" href="#">Calendario Cuántico // Matriz de Compromisos</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="agenda-cuantica" href="#">Agenda Cuántica</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="gestor-de-tareas" href="#">Gestor de Tareas</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="compromisos-y-traslapes" href="#">Compromisos &amp; Traslapes</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="suite-de-pruebas-sdd" href="#">Suite de Pruebas SDD</a></nav></div></div><div class="px-space-lg flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span>UPLINK TELEMETRY</span><span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span></div><div class="font-label-sm text-label-sm text-primary">NODE: ORBITAL-ALPHA-7</div><div class="font-label-sm text-label-sm text-outline">LATENCY: 0.14ms SYNCHRONIZED</div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-2xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-semibold tracking-wide text-primary">CHRONO·CORE</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed">SDD v1.0.0</span></div><div class="hidden xl:flex items-center gap-space-sm pl-space-md"><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>CLEAN ARCHITECTURE</span><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary-fixed-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>STRICT TYPESCRIPT</span><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm border border-secondary/40 shadow-[0_0_12px_rgba(168,85,247,0.25)]"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>MATRIZ ACTIVA</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span><span>T-STAMP: 2026.04.18 // 14:02:49 UTC</span></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,240,255,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-lg py-space-md gap-space-lg text-on-surface">
+<!-- OVERLAY BACKGROUND GLOWS (CONTAINED) -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+</div>
+<!-- 1. ENCABEZADO DE CONTROL TEMPORAL & TELEMETRÍA SUPERIOR -->
+<header class="flex flex-col gap-space-md">
+<!-- SUB-NAV / BREADCRUMB TELEMETRÍA -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest/80 backdrop-blur-xl p-space-sm rounded-xl border border-primary-container/20 shadow-[0_0_20px_rgba(0,240,255,0.08)]">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f0ff]"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">MOTOR TEMPORAL ORBITAL // NODE ALIGNED</span>
+<span class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded bg-surface-container-high">RN-03: ENFORCED</span>
+<span class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded bg-surface-container-high">RN-04: &gt;=15m MIN</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+<span>SYNC ESTACIÓN ORBITAL: 100% NOMINAL</span>
+</div>
+<div class="px-space-xs py-0.5 rounded bg-primary-container/10 text-primary-container font-label-sm text-label-sm border border-primary-container/30">
+          SDD REPO: InMemoryCommitmentRepository
+        </div>
+</div>
+</div>
+<!-- MAIN CONTROL BAR -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-low/70 backdrop-blur-2xl p-space-lg rounded-xl border border-white/5 shadow-2xl relative overflow-hidden">
+<!-- Accent Line Glow -->
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary-container to-secondary"></div>
+<!-- Titulo y Modo -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-white font-bold flex items-center gap-space-sm">
+<span class="text-primary-container material-symbols-outlined text-[32px]">calendar_month</span>
+            MATRIZ DE COMPROMISOS
+          </h1>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/20 px-space-sm py-1 rounded border border-secondary/30">
+            CALENDARIO CUÁNTICO MULTI-NODO
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+          Matriz de sincronización hipertemporal sin fisuras. Resolución matemática de superposición de intervalos con exclusión mutua algorítmica.
+        </p>
+</div>
+<!-- Control de Semana & Navegación -->
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Switcher de semana -->
+<div class="flex items-center bg-surface-container-lowest/90 rounded-lg p-1 border border-white/10">
+<button class="px-space-sm py-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all flex items-center gap-1 font-label-md text-label-md" id="btn-prev-week">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+            PREV
+          </button>
+<div class="px-space-md py-1.5 text-center font-label-md text-label-md font-semibold text-primary border-x border-white/10">
+            SEMANA 24 // 08 - 14 JUNIO 2026 UTC
+          </div>
+<button class="px-space-sm py-1.5 rounded hover:bg-surface-container text-primary-container font-label-md text-label-md transition-all" id="btn-today">
+            HOY
+          </button>
+<button class="px-space-sm py-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all flex items-center gap-1 font-label-md text-label-md" id="btn-next-week">
+            SIG
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Vista Selector -->
+<div class="flex items-center bg-surface-container-lowest/90 rounded-lg p-1 border border-white/10">
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">
+    SEMANAL
+  </button>
+<button class="px-space-sm py-1 rounded bg-[#00f0ff] text-black font-label-sm text-label-sm font-bold shadow-[0_0_15px_#00f0ff] transition-all flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-black animate-pulse"></span>
+    DIARIA // ZOOM 5 MIN
+  </button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-error flex items-center gap-1 font-label-sm text-label-sm transition-all">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+    MATRIZ CONFLICTO
+  </button>
+</div>
+<!-- Filtro Nodos / Creadores -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/90 px-space-sm py-1.5 rounded-lg border border-white/10">
+<span class="material-symbols-outlined text-outline text-[18px]">filter_alt</span>
+<select class="bg-transparent font-label-sm text-label-sm text-primary focus:outline-none cursor-pointer">
+<option class="bg-surface-container-high text-on-surface" value="all">TODOS LOS NODOS // RED GLOBAL</option>
+<option class="bg-surface-container-high text-on-surface" selected="" value="commander">commander@chronocore.space</option>
+<option class="bg-surface-container-high text-on-surface" value="lead">lead@quantum.dev</option>
+<option class="bg-surface-container-high text-on-surface" value="station">officer.val@station.io</option>
+</select>
+</div>
+</div>
+</div>
+<!-- STATS STRIP TELEMETRY -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low/60 backdrop-blur-xl p-space-md rounded-xl border border-white/5 flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Compromisos Activos</div>
+<div class="font-headline-md text-headline-md font-bold text-primary mt-1">08 <span class="font-label-sm text-label-sm text-outline font-normal">NODOS</span></div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shadow-[0_0_15px_rgba(0,240,255,0.2)]">
+<span class="material-symbols-outlined">event_available</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-xl p-space-md rounded-xl border border-white/5 flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Conflictos Evitados (RN-03)</div>
+<div class="font-headline-md text-headline-md font-bold text-secondary mt-1">03 <span class="font-label-sm text-label-sm text-outline font-normal">EXCEPCIONES</span></div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shadow-[0_0_15px_rgba(221,183,255,0.2)]">
+<span class="material-symbols-outlined">shield</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-xl p-space-md rounded-xl border border-white/5 flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Horas Agendadas</div>
+<div class="font-headline-md text-headline-md font-bold text-white mt-1">14.5<span class="text-primary-container text-body-sm">h</span> <span class="font-label-sm text-label-sm text-outline font-normal">ESTE CICLO</span></div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-[0_0_15px_rgba(219,252,255,0.2)]">
+<span class="material-symbols-outlined">timelapse</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-xl p-space-md rounded-xl border border-white/5 flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nodos Conectados</div>
+<div class="font-headline-md text-headline-md font-bold text-primary-fixed mt-1">12 <span class="font-label-sm text-label-sm text-secondary font-normal">STABLE</span></div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined">hub</span>
+</div>
+</div>
+</div>
+</header>
+<!-- 2 & 3. CONTENEDOR SPLIT: MATRIZ CALENDARIO HOLOGRÁFICA (IZQ) + DRAWER COMMITMENT SERVICE (DER) -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg items-start">
+<!-- ==================== COLUMNA PRINCIPAL (VISTA DIARIA DETALLADA - ZOOM 5 MIN) ==================== -->
+<section class="2xl:col-span-8 flex flex-col gap-space-md bg-surface-container-low/70 backdrop-blur-2xl p-space-md md:p-space-lg rounded-2xl border border-white/5 shadow-2xl relative">
+<!-- SUB-HEADER CALENDARIO CON SELECTOR DE ESCALA DE TIEMPO -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-white/10">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">view_timeline</span>
+        VISTA DIARIA CUÁNTICA // ULTRA RESOLUCIÓN
+      </span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 border border-primary-container/40 font-label-sm text-label-sm text-primary-container font-mono">
+        5-MIN STEP (12 SLOTS/H)
+      </span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-mono">
+      RESOLUCIÓN TEMPORAL: INTERVALOS DE 5 MINUTOS (12 SLOTS / HORA) // DÍA SELECCIONADO: MARTES 09 JUNIO 2026 UTC
+    </span>
+</div>
+<!-- SELECTOR INTERACTIVO DE ESCALA TEMPORAL -->
+<div class="flex items-center bg-surface-container-lowest/90 rounded-lg p-1 border border-white/10 shrink-0">
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">
+      60 MIN
+    </button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all border-l border-white/5">
+      15 MIN
+    </button>
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-[0_0_12px_#00f0ff] transition-all flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface animate-pulse"></span>
+      5 MIN (ACTIVO - ULTRA RESOLUCIÓN)
+    </button>
+</div>
+</div>
+<!-- LEYENDA TÉCNICA DE ESTADOS Y REGLAS DE NEGOCIO -->
+<div class="flex flex-wrap items-center justify-between gap-y-2 gap-x-4 bg-surface-container-lowest/60 p-2.5 rounded-xl border border-white/5 font-label-sm text-[11px]">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container border border-primary-container shadow-[0_0_8px_#00f0ff]"></span>
+<span>PROGRAMADO / CONFIRMADO</span>
+</div>
+<div class="flex items-center gap-1.5 text-emerald-400">
+<span class="w-2.5 h-2.5 rounded-sm bg-emerald-500/80 border border-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
+<span>RN-04 VÁLIDO (≥15 MIN)</span>
+</div>
+<div class="flex items-center gap-1.5 text-error">
+<span class="w-2.5 h-2.5 rounded-sm bg-error/30 border border-dashed border-error"></span>
+<span>RN-04 RECHAZADO (&lt;15 MIN)</span>
+</div>
+<div class="flex items-center gap-1.5 text-rose-400">
+<span class="w-2.5 h-2.5 rounded-sm bg-rose-500/40 border border-rose-400 shadow-[0_0_8px_rgba(244,63,94,0.5)] animate-pulse"></span>
+<span>CONFLICTO RN-03 (TRASLAPE)</span>
+</div>
+</div>
+<div class="font-mono text-outline text-[10px]">
+    1 SLOT = 5 MIN (20px) | 1 HORA = 240px
+  </div>
+</div>
+<!-- REJILLA DIARIA DETALLADA CON ZOOM DE 5 MINUTOS (13:00 A 18:00 UTC = 5 HORAS = 1200px ALTURA TOTAL) -->
+<div class="relative overflow-x-auto select-none rounded-xl border border-white/10 bg-surface-container-lowest/90 shadow-inner">
+<div class="min-w-[780px]">
+<!-- CABECERA DEL DÍA -->
+<div class="sticky top-0 z-30 flex items-center justify-between px-space-md py-2.5 bg-surface-container-high/90 backdrop-blur-xl border-b border-white/10">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] text-primary-container">today</span>
+<span>MARTES, 09 DE JUNIO DE 2026 // TIME SLOTS [13:00 - 18:00 UTC]</span>
+</div>
+<div class="flex items-center gap-3 font-mono text-label-sm text-outline">
+<span class="flex items-center gap-1 text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+          T-CURRENT: 14:02 UTC
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-white/80">TOTAL SLOTS: 60 (300 MIN)</span>
+</div>
+</div>
+<!-- CONTENEDOR PRINCIPAL: RULER (IZQ) + SLOTS & EVENTS GRID (DER) -->
+<!-- Altura: 5 horas * 240px = 1200px. Cada 5 minutos = 20px de alto -->
+<div class="relative flex h-[1200px]">
+<!-- COLUMNA IZQUIERDA: TIME RULER HORA A HORA CON DESGLOSE DE 5 MIN (Ancho: 110px) -->
+<div class="w-[110px] shrink-0 border-r border-white/10 bg-surface-container-lowest/80 flex flex-col font-mono text-label-sm select-none z-20">
+<!-- HORA 13:00 (12 slots de 20px = 240px) -->
+<div class="h-[240px] border-b border-white/10 relative flex flex-col justify-between py-0.5">
+<div class="flex items-center justify-between px-2 text-primary font-bold text-[12px] bg-surface-container/40">
+<span>13:00</span><span class="text-[9px] text-primary-container">UTC</span>
+</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:05</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:10</div>
+<div class="px-2 text-right text-[10px] text-secondary font-medium">13:15</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:20</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:25</div>
+<div class="px-2 text-right text-[10px] text-primary-container font-semibold">13:30</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:35</div>
+<div class="px-2 text-right text-[10px] text-error font-semibold">13:40</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:45</div>
+<div class="px-2 text-right text-[10px] text-error font-semibold">13:50</div>
+<div class="px-2 text-right text-[10px] text-outline/60">13:55</div>
+</div>
+<!-- HORA 14:00 (12 slots de 20px = 240px) -->
+<div class="h-[240px] border-b border-white/10 relative flex flex-col justify-between py-0.5 bg-primary-container/[0.03]">
+<div class="flex items-center justify-between px-2 text-primary font-bold text-[12px] bg-primary-container/20 text-primary-container">
+<span>14:00</span><span class="text-[9px]">NOW</span>
+</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:05</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:10</div>
+<div class="px-2 text-right text-[10px] text-outline font-medium">14:15</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:20</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:25</div>
+<div class="px-2 text-right text-[10px] text-primary font-semibold">14:30</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:35</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:40</div>
+<div class="px-2 text-right text-[10px] text-rose-400 font-bold">14:45</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:50</div>
+<div class="px-2 text-right text-[10px] text-outline/60">14:55</div>
+</div>
+<!-- HORA 15:00 (12 slots de 20px = 240px) -->
+<div class="h-[240px] border-b border-white/10 relative flex flex-col justify-between py-0.5">
+<div class="flex items-center justify-between px-2 text-primary font-bold text-[12px] bg-surface-container/40">
+<span>15:00</span><span class="text-[9px] text-outline">UTC</span>
+</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:05</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:10</div>
+<div class="px-2 text-right text-[10px] text-outline font-medium">15:15</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:20</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:25</div>
+<div class="px-2 text-right text-[10px] text-primary-container font-bold">15:30</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:35</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:40</div>
+<div class="px-2 text-right text-[10px] text-rose-400 font-medium">15:45</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:50</div>
+<div class="px-2 text-right text-[10px] text-outline/60">15:55</div>
+</div>
+<!-- HORA 16:00 (12 slots de 20px = 240px) -->
+<div class="h-[240px] border-b border-white/10 relative flex flex-col justify-between py-0.5">
+<div class="flex items-center justify-between px-2 text-primary font-bold text-[12px] bg-surface-container/40">
+<span>16:00</span><span class="text-[9px] text-outline">UTC</span>
+</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:05</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:10</div>
+<div class="px-2 text-right text-[10px] text-primary-container font-semibold">16:15</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:20</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:25</div>
+<div class="px-2 text-right text-[10px] text-secondary font-semibold">16:30</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:35</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:40</div>
+<div class="px-2 text-right text-[10px] text-outline font-medium">16:45</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:50</div>
+<div class="px-2 text-right text-[10px] text-outline/60">16:55</div>
+</div>
+<!-- HORA 17:00 (12 slots de 20px = 240px) -->
+<div class="h-[240px] relative flex flex-col justify-between py-0.5">
+<div class="flex items-center justify-between px-2 text-primary font-bold text-[12px] bg-surface-container/40">
+<span>17:00</span><span class="text-[9px] text-outline">UTC</span>
+</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:05</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:10</div>
+<div class="px-2 text-right text-[10px] text-outline font-medium">17:15</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:20</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:25</div>
+<div class="px-2 text-right text-[10px] text-outline font-semibold">17:30</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:35</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:40</div>
+<div class="px-2 text-right text-[10px] text-outline font-medium">17:45</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:50</div>
+<div class="px-2 text-right text-[10px] text-outline/60">17:55</div>
+</div>
+</div>
+<!-- ÁREA PRINCIPAL: REJILLA DE 5 MINUTOS CON LÍNEAS TENUES & EVENTOS POSICIONADOS -->
+<div class="flex-1 relative bg-gradient-to-b from-[#0a0f1d] via-[#0e131f] to-[#080e1a]">
+<!-- MICRO-GUÍAS TENUES DE 5 MINUTOS (Fondo repetitivo: 20px por slot) -->
+<div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(221, 183, 255, 0.02) 1px, transparent 1px); background-size: 100% 20px, 100% 60px;"></div>
+<!-- GUÍAS HORARIAS MARCADAS CADA 240px -->
+<div class="absolute top-0 left-0 right-0 h-px bg-primary-container/20"></div>
+<div class="absolute top-[240px] left-0 right-0 h-px bg-primary-container/30 border-t border-dashed border-primary-container/40"></div>
+<div class="absolute top-[480px] left-0 right-0 h-px bg-primary-container/30 border-t border-dashed border-primary-container/40"></div>
+<div class="absolute top-[720px] left-0 right-0 h-px bg-primary-container/30 border-t border-dashed border-primary-container/40"></div>
+<div class="absolute top-[960px] left-0 right-0 h-px bg-primary-container/30 border-t border-dashed border-primary-container/40"></div>
+<!-- LÍNEA TEMPORAL ACTUAL HOLOGRÁFICA (T-STAMP REAL: 14:02 UTC = 13:00 a 14:02 = 62 min * 4px/min = 248px) -->
+<div class="absolute left-0 right-0 top-[248px] z-30 flex items-center pointer-events-none">
+<div class="bg-primary-container text-black font-mono text-[10px] px-2 py-0.5 rounded-r shadow-[0_0_12px_#00f0ff] font-bold">
+            14:02 UTC [ACTIVO]
+          </div>
+<div class="flex-1 h-[2px] bg-primary-container shadow-[0_0_12px_#00f0ff]"></div>
+<div class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_12px_#00f0ff] animate-ping mr-2"></div>
+</div>
+<!-- ==================== BLOQUES DE COMPROMISOS ALINEADOS A 5 MIN ==================== -->
+<!-- 1. DEMOSTRACIÓN RN-04: Bloque de 15 minutos exactos (13:15 a 13:30) -->
+<!-- Start: 13:15 = 15m * 4px = 60px. Height: 15m = 3 slots * 20px = 60px -->
+<div class="absolute top-[60px] left-4 right-8 h-[60px] bg-emerald-950/40 backdrop-blur-md border-2 border-emerald-500/70 rounded-xl p-2.5 flex items-center justify-between shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:border-emerald-400 transition-all z-10 group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-mono text-emerald-400 font-bold text-[12px]">13:15 - 13:30 UTC</span>
+<span class="bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 font-mono text-[9px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">
+                  CASO LÍMITE RN-04: EXACTAMENTE 15 MIN (3 SLOTS DE 5M - VÁLIDO)
+                </span>
+</div>
+<span class="text-white text-body-sm text-[12px] font-medium">Revisión Rápida de Sensores Inerciales</span>
+</div>
+</div>
+<div class="font-mono text-emerald-400/80 text-[10px] hidden md:flex items-center gap-1 bg-emerald-950/60 px-2 py-1 rounded border border-emerald-500/30">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Duración: 15m (RN-04 SATISFECHA)
+          </div>
+</div>
+<!-- 2. INTENTO DE VIOLACIÓN RN-04: Ranura de 10 minutos bloqueada (13:40 a 13:50) -->
+<!-- Start: 13:40 = 40m * 4px = 160px. Height: 10m = 2 slots * 20px = 40px -->
+<div class="absolute top-[160px] left-4 right-8 h-[40px] bg-red-950/30 backdrop-blur-md border-2 border-dashed border-red-500 rounded-xl px-3 flex items-center justify-between shadow-[0_0_20px_rgba(239,68,68,0.25)] z-10 group">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-red-400 text-[18px] animate-pulse">block</span>
+<span class="font-mono text-red-400 font-bold text-[11px]">13:40 - 13:50 UTC</span>
+<span class="bg-red-500/20 border border-red-500/50 text-red-200 font-mono text-[9px] px-2 py-0.5 rounded font-bold uppercase">
+              BLOQUEADO RN-04: &lt;15 MIN (TaskValidationException rechazada)
+            </span>
+</div>
+<span class="font-mono text-red-400/90 text-[10px] hidden sm:inline">
+            REGLA: DURACIÓN &lt; 15m INVALIDA AGENDAMIENTO (10m DETECTADOS)
+          </span>
+</div>
+<!-- 3. COMPROMISO CONFIRMADO: "Calibración de Núcleo Alfa" (14:00 a 15:30) -->
+<!-- Start: 14:00 = 60m * 4px = 240px. Height: 90m = 18 sub-bloques de 5 min * 20px = 360px -->
+<div class="absolute top-[240px] left-4 right-1/4 h-[360px] bg-surface-container-high/90 backdrop-blur-2xl border-2 border-[#00f0ff] rounded-2xl p-4 flex flex-col justify-between shadow-[0_0_35px_rgba(0,240,255,0.25)] z-10 hover:border-white transition-all group" id="block-core-alpha-daily">
+<!-- Header del Bloque -->
+<div class="flex items-center justify-between border-b border-primary-container/20 pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#00f0ff] animate-ping shadow-[0_0_10px_#00f0ff]"></span>
+<span class="font-mono text-primary font-bold text-[14px]">14:00 - 15:30 UTC</span>
+<span class="bg-primary-container text-black font-mono text-[9px] font-extrabold px-2 py-0.5 rounded shadow-[0_0_8px_#00f0ff] uppercase">
+                CONFIRMADO
+              </span>
+</div>
+<div class="flex items-center gap-2 font-mono text-[10px] text-primary-container bg-primary-container/10 px-2 py-0.5 rounded border border-primary-container/30">
+<span class="material-symbols-outlined text-[13px]">grid_view</span>
+<span>18 SUB-BLOQUES DE 5 MIN (90 MIN)</span>
+</div>
+</div>
+<!-- Contenido y Datos del Compromiso -->
+<div class="flex flex-col gap-1.5 my-auto">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">science</span>
+              Calibración de Núcleo Alfa
+            </h3>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]">badge</span>
+                Creador: commander@chronocore.space
+              </span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">group</span>
+                3 Participantes (Sincronía Orbital)
+              </span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 max-w-lg">
+              Protocolo de ignición cuasi-estacionaria. Todos los canales cuánticos orbitales asignados en exclusión de nodo primario.
+            </p>
+</div>
+<!-- Micro sub-bloques visuales (indicador de los 18 slots contiguos) -->
+<div class="pt-2 border-t border-white/10 flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[9px] text-outline">
+<span>SLOTS DE 5M OCUPADOS: [14:00, 14:05, 14:10 ... 15:25]</span>
+<span class="text-emerald-400 font-bold">RN-04: CUMPLIDA (90m &gt;= 15m)</span>
+</div>
+<!-- Barra con 18 divisiones precisas de 5 min -->
+<div class="grid grid-cols-18 gap-0.5 h-2 bg-surface-container-lowest/80 p-0.5 rounded border border-primary-container/30" style="display: grid; grid-template-columns: repeat(18, minmax(0, 1fr));">
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+<div class="h-full bg-primary-container rounded-[1px]"></div>
+</div>
+</div>
+</div>
+<!-- 4. SIMULACIÓN DE CONFLICTO RN-03: Bloque traslapado (14:45 a 15:45) -->
+<!-- Start: 14:45 = (60+45)*4 = 105m * 4px = 420px. Height: 60m = 12 slots * 20px = 240px.
+             Intersecta desde 14:45 a 15:30 (9 ranuras de 5 min) con "Calibración de Núcleo Alfa" -->
+<div class="absolute top-[420px] left-1/3 right-4 h-[240px] bg-rose-950/70 backdrop-blur-xl border-2 border-dashed border-rose-500 rounded-2xl p-3.5 flex flex-col justify-between shadow-[0_0_35px_rgba(244,63,94,0.4)] z-20 animate-pulse hover:border-rose-400" id="overlap-simulation-block">
+<div class="flex items-center justify-between border-b border-rose-500/40 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-rose-400 text-[20px]">crisis_alert</span>
+<span class="font-mono text-rose-300 font-bold text-[13px]">14:45 - 15:45 UTC</span>
+<span class="bg-rose-500/30 text-rose-200 border border-rose-400 font-mono text-[9px] font-bold px-2 py-0.5 rounded uppercase">
+                CONFLICTO ACTIVO RN-03
+              </span>
+</div>
+<span class="bg-rose-900/80 text-rose-200 font-mono text-[9px] px-2 py-0.5 rounded border border-rose-500/50">
+              INTERSECCIÓN: 9 SLOTS (45 MIN)
+            </span>
+</div>
+<div class="my-auto flex flex-col gap-1">
+<div class="font-headline-sm text-[13px] font-bold text-rose-100">
+              Simulación: "Reinicio Módulo Fotónico Cuántico"
+            </div>
+<!-- ALERTA TÉCNICA DETALLADA -->
+<div class="bg-surface-container-lowest/90 p-2 rounded-lg border border-rose-500/50 font-mono text-[10px] text-rose-200 leading-tight">
+<span class="font-bold text-rose-400">ScheduleConflictException: Traslape detectado en intervalo ocupado</span><br/>
+              Colisión algorítmica: [14:45 &lt; 15:30] &amp;&amp; [15:45 &gt; 14:00].<br/>
+              9 ranuras de 5 min colisionan con el compromiso "Calibración de Núcleo Alfa". Inserción denegada por SDD.
+            </div>
+</div>
+<div class="pt-2 border-t border-rose-500/30 flex items-center justify-between font-mono text-[10px] text-rose-300">
+<span>SOLICITANTE: lead@quantum.dev</span>
+<span class="text-rose-400 font-bold uppercase">ESTADO: TRANSACCIÓN REVERTIDA</span>
+</div>
+</div>
+<!-- 5. EXTREMO CONTIGUO VÁLIDO: Bloque adyacente (15:30 a 16:15) -->
+<!-- Start: 15:30 = (120+30)*4 = 150m * 4px = 600px. Height: 45m = 9 slots * 20px = 180px -->
+<div class="absolute top-[600px] left-4 right-1/3 h-[180px] bg-secondary-container/20 backdrop-blur-xl border-2 border-primary-container rounded-2xl p-3.5 flex flex-col justify-between shadow-[0_0_25px_rgba(0,240,255,0.2)] z-10 hover:border-white transition-all">
+<div class="flex items-center justify-between border-b border-primary-container/30 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">join_right</span>
+<span class="font-mono text-primary font-bold text-[13px]">15:30 - 16:15 UTC</span>
+<span class="bg-[#00f0ff] text-black font-mono text-[9px] font-extrabold px-2 py-0.5 rounded shadow-[0_0_10px_#00f0ff] uppercase">
+                EXTREMO CONTIGUO SIN TRASLAPE [15:30 == 15:30 OK]
+              </span>
+</div>
+<span class="font-mono text-[9px] text-primary-container bg-primary-container/10 px-2 py-0.5 rounded border border-primary-container/30">
+              9 SLOTS (45 MIN)
+            </span>
+</div>
+<div class="flex flex-col gap-1 my-auto">
+<div class="font-headline-sm text-[14px] font-semibold text-white">
+              Sincronización de Datos Telegráficos &amp; Gateway
+            </div>
+<div class="font-mono text-[11px] text-on-surface-variant flex items-center gap-2">
+<span class="text-secondary font-medium">officer.val@station.io</span>
+<span>•</span>
+<span class="text-primary-container font-medium">RN-03: EXTREMOS ADYACENTES ADMITIDOS</span>
+</div>
+</div>
+<div class="pt-2 border-t border-white/10 flex items-center justify-between font-mono text-[10px] text-outline">
+<span>INICIO: EXACTAMENTE AL FINAL DEL NÚCLEO ALFA (15:30:00.000)</span>
+<span class="text-emerald-400 font-semibold">NO GENERA CONFLICTO</span>
+</div>
+</div>
+<!-- 6. BLOQUE POSTERIOR: Sync Orbital Continuo (16:30 a 17:30) -->
+<!-- Start: 16:30 = (180+30)*4 = 210m * 4px = 840px. Height: 60m = 12 slots * 20px = 240px -->
+<div class="absolute top-[840px] left-4 right-8 h-[240px] bg-secondary-container/25 backdrop-blur-xl border border-secondary/60 rounded-2xl p-4 flex flex-col justify-between shadow-[0_0_20px_rgba(221,183,255,0.15)] z-10 hover:border-secondary transition-all">
+<div class="flex items-center justify-between border-b border-secondary/30 pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-mono text-secondary font-bold text-[13px]">16:30 - 17:30 UTC</span>
+<span class="bg-secondary/30 text-secondary border border-secondary/40 font-mono text-[9px] px-2 py-0.5 rounded font-semibold uppercase">
+                CONFIRMADO
+              </span>
+</div>
+<span class="font-mono text-[10px] text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">
+              12 SLOTS (60 MIN)
+            </span>
+</div>
+<div class="flex flex-col gap-1 my-auto">
+<div class="font-headline-sm text-[14px] text-white font-medium">
+              Transmisión Inter-Estelar de Telemetría Orbital
+            </div>
+<div class="font-mono text-[11px] text-on-surface-variant">
+              Responsable: officer.val@station.io • 5 Participantes Asignados
+            </div>
+</div>
+<div class="pt-2 border-t border-white/10 flex items-center justify-between font-mono text-[10px] text-outline">
+<span>CANAL CRIPTOGRÁFICO: QUANTUM-SSH-7</span>
+<span class="text-primary font-semibold">ESTADO: NOMINAL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FOOTER AUDITORÍA SDD Y COMANDOS DE TELEMETRÍA -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-white/10">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">terminal</span>
+<span>COMMITMENT-SERVICE REPO LOG:</span>
+<span class="text-primary font-mono">findByNodeIdAndRange(2026-06-09T13:00:00Z, 2026-06-09T18:00:00Z) :: 5 found :: 0 ms execution</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span>STRICT VALIDATION: ACTIVE</span>
+</div>
+</div>
+</section>
+<!-- ==================== COLUMNA DERECHA (DRAWER / PANEL COMMITMENT SERVICE) ==================== -->
+<aside class="2xl:col-span-4 flex flex-col gap-space-md">
+<!-- FORMULARIO CREACIÓN STRICT SDD -->
+<div class="bg-surface-container-low/80 backdrop-blur-2xl p-space-lg rounded-2xl border border-primary-container/20 shadow-2xl relative overflow-hidden flex flex-col gap-space-md">
+<!-- Glow top corner -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Header Drawer -->
+<div class="flex items-center justify-between border-b border-white/10 pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">add_circle</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-white tracking-wide">
+              NUEVO COMPROMISO
+            </h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-mono">
+            COMMITMENT_SVC
+          </span>
+</div>
+<form class="flex flex-col gap-space-md" id="commitment-form" onsubmit="event.preventDefault();">
+<!-- 1. CAMPO CREADOR (RFC 5322) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">
+                Creador (ID / Email RFC 5322)
+              </label>
+<span class="font-label-sm text-[10px] text-emerald-400 flex items-center gap-0.5" id="rfc-indicator">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                RFC 5322 VALIDADOR OK
+              </span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest/90 border border-white/10 focus:border-primary-container rounded-lg px-space-sm py-2 font-label-md text-label-md text-primary focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="input-creator" placeholder="usuario@dominio.cosmos" required="" type="email" value="commander@chronocore.space"/>
+<span class="absolute right-2.5 top-2.5 material-symbols-outlined text-[16px] text-primary-container">alternate_email</span>
+</div>
+</div>
+<!-- 2. CAMPO TÍTULO COMPROMISO -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">
+                Título del Compromiso
+              </label>
+<span class="font-label-sm text-[10px] text-outline" id="title-counter">
+                28 / 100
+              </span>
+</div>
+<input class="w-full bg-surface-container-lowest/90 border border-white/10 focus:border-primary-container rounded-lg px-space-sm py-2 font-body-md text-body-md text-white focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="input-title" maxlength="100" placeholder="Descripción breve de la operación..." required="" type="text" value="Simulación de Vórtice Hiperespacial"/>
+</div>
+<!-- 3. FECHA Y HORARIOS CON CÁLCULO DE DURACIÓN (RN-04) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">
+              Ventana Temporal (UTC)
+            </label>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] text-outline">HORA INICIO</span>
+<input class="bg-surface-container-lowest/90 border border-white/10 focus:border-primary-container rounded-lg px-space-xs py-1.5 font-label-md text-label-md text-white focus:outline-none text-center" id="time-start" type="time" value="14:45"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[10px] text-outline">HORA FIN</span>
+<input class="bg-surface-container-lowest/90 border border-white/10 focus:border-primary-container rounded-lg px-space-xs py-1.5 font-label-md text-label-md text-white focus:outline-none text-center" id="time-end" type="time" value="16:00"/>
+</div>
+</div>
+<!-- FEEDBACK DINÁMICO DE DURACIÓN RN-04 -->
+<div class="mt-1 p-space-xs rounded bg-surface-container-highest/60 border border-white/10 flex items-center justify-between font-label-sm text-label-sm" id="duration-feedback">
+<span class="text-on-surface-variant">Cálculo de Duración:</span>
+<span class="text-emerald-400 font-bold flex items-center gap-1" id="duration-status">
+                Duración: 75 min ✔️ (RN-04 CUMPLIDA)
+              </span>
+</div>
+</div>
+<!-- 4. LISTA DINÁMICA DE PARTICIPANTES -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">
+                Participantes (RFC 5322)
+              </label>
+<span class="font-label-sm text-[10px] text-outline">3 ASIGNADOS</span>
+</div>
+<!-- Tags de Participantes -->
+<div class="flex flex-wrap gap-1.5 p-space-xs bg-surface-container-lowest/90 rounded-lg border border-white/10 min-h-[46px] items-center" id="participants-list">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 border border-secondary/40 text-secondary font-label-sm text-[10px]">
+                lead@quantum.dev
+                <button class="hover:text-error transition-colors" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[12px]">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 border border-primary-container/30 text-primary-container font-label-sm text-[10px]">
+                officer.val@station.io
+                <button class="hover:text-error transition-colors" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[12px]">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high border border-white/10 text-on-surface font-label-sm text-[10px]">
+                ai.telemetry@chronocore.space
+                <button class="hover:text-error transition-colors" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[12px]">close</span>
+</button>
+</span>
+</div>
+<!-- Input agregar participante rápido -->
+<div class="flex gap-space-xs mt-1">
+<input class="flex-1 bg-surface-container-lowest/90 border border-white/10 rounded-lg px-2 py-1 font-label-sm text-label-sm text-on-surface focus:outline-none focus:border-primary-container" id="input-new-participant" placeholder="nuevo.participante@red.org" type="email"/>
+<button class="px-3 py-1 bg-surface-container hover:bg-surface-container-high text-primary-container rounded-lg font-label-sm text-label-sm flex items-center justify-center transition-all border border-white/10" id="btn-add-participant" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- 5. RECORDATORIO CUÁNTICO -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">
+              Recordatorio Cuántico
+            </label>
+<div class="grid grid-cols-3 gap-space-xs font-label-sm text-label-sm">
+<label class="flex items-center justify-center gap-1 bg-surface-container-lowest/90 py-1.5 px-2 rounded-lg border border-primary-container/50 text-primary-container cursor-pointer">
+<input checked="" class="accent-primary-container" name="reminder" type="radio" value="15"/>
+<span>15 MIN</span>
+</label>
+<label class="flex items-center justify-center gap-1 bg-surface-container-lowest/90 py-1.5 px-2 rounded-lg border border-white/10 text-on-surface cursor-pointer hover:border-white/20">
+<input class="accent-primary-container" name="reminder" type="radio" value="30"/>
+<span>30 MIN</span>
+</label>
+<label class="flex items-center justify-center gap-1 bg-surface-container-lowest/90 py-1.5 px-2 rounded-lg border border-white/10 text-on-surface cursor-pointer hover:border-white/20">
+<input class="accent-primary-container" name="reminder" type="radio" value="60"/>
+<span>1 HORA</span>
+</label>
+</div>
+</div>
+<!-- ACCIONES DEL FORMULARIO -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<!-- Botón Principal Agendar -->
+<button class="w-full py-2.5 px-space-md rounded-xl bg-gradient-to-r from-primary-container via-cyan-400 to-secondary text-on-primary-fixed font-headline-sm text-[14px] font-bold uppercase tracking-wider shadow-[0_0_25px_rgba(0,240,255,0.4)] hover:shadow-[0_0_35px_rgba(0,240,255,0.7)] active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs" id="btn-schedule" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+              AGENDAR EN MATRIZ TEMPORAL
+            </button>
+<!-- Botón de Simulación de Conflicto RN-03 -->
+<button class="w-full py-2 px-space-md rounded-xl bg-error-container/20 border border-error/50 text-error hover:bg-error-container/40 font-label-md text-label-md uppercase tracking-wide transition-all flex items-center justify-center gap-space-xs shadow-[0_0_15px_rgba(255,180,171,0.2)]" id="btn-trigger-conflict" type="button">
+<span class="material-symbols-outlined text-[16px]">crisis_alert</span>
+              TESTEAR TRASLAPE (TRIGGER RN-03)
+            </button>
+</div>
+</form>
+</div>
+<!-- AUDITORÍA EN TIEMPO REAL: InMemoryCommitmentRepository -->
+<div class="bg-surface-container-low/70 backdrop-blur-2xl p-space-md rounded-2xl border border-white/5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between border-b border-white/5 pb-1.5">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">database</span>
+<span>AUDITORÍA DE REPOSITORIO SDD</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline font-mono">NODE_MEM_ST</span>
+</div>
+<div class="flex flex-col gap-1.5 font-label-sm text-[11px] font-mono">
+<div class="p-1.5 rounded bg-surface-container-lowest/80 border-l-2 border-emerald-400 flex items-center justify-between text-on-surface">
+<span>[14:01:22] COMMIT_SAVE :: #TK-9021</span>
+<span class="text-emerald-400">SUCCESS</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest/80 border-l-2 border-error flex items-center justify-between text-on-surface">
+<span>[14:02:10] CONFLICT_CHECK :: #OVERLAP</span>
+<span class="text-error font-bold">REJECTED [RN-03]</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest/80 border-l-2 border-primary-container flex items-center justify-between text-on-surface">
+<span>[14:02:49] REPO_FETCH :: ACTIVE_NODES</span>
+<span class="text-primary-container">SYNC 0.14ms</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- TOAST DE ALERTA DINÁMICA SDD PARA SIMULACIÓN -->
+<div class="fixed bottom-6 right-6 max-w-md bg-surface-container-lowest/95 backdrop-blur-2xl border-2 border-error p-space-md rounded-xl shadow-[0_0_30px_rgba(244,63,94,0.4)] z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none flex items-start gap-space-sm" id="conflict-toast">
+<div class="p-2 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">error</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="font-headline-sm text-[14px] font-bold text-error">
+        EXCEPCIÓN: ScheduleConflictException
+      </div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">
+        La regla de negocio <strong>RN-03</strong> ha bloqueado la inserción: colisión de intervalo detectada con el bloque "Calibración de Núcleo Alfa" (14:00 - 15:30 UTC).
+      </div>
+<div class="font-label-sm text-[10px] text-outline font-mono mt-1">
+        STATUS CODE: 409_CONFLICT // ROLLBACK EMITIDO
+      </div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVIDAD CLIENT-SIDE MICRO-INTERACTIONS -->
+<script>
+  // Actualización dinámica de contador de caracteres en título
+  const inputTitle = document.getElementById('input-title');
+  const titleCounter = document.getElementById('title-counter');
+  if (inputTitle && titleCounter) {
+    inputTitle.addEventListener('input', (e) => {
+      const len = e.target.value.length;
+      titleCounter.textContent = `${len} / 100`;
+    });
+  }
+
+  // Validación y cálculo dinámico de duración según RN-04 (Mínimo 15 minutos)
+  const timeStart = document.getElementById('time-start');
+  const timeEnd = document.getElementById('time-end');
+  const durationStatus = document.getElementById('duration-status');
+
+  function calculateDuration() {
+    if (!timeStart || !timeEnd || !durationStatus) return;
+    const [h1, m1] = timeStart.value.split(':').map(Number);
+    const [h2, m2] = timeEnd.value.split(':').map(Number);
+    
+    let totalMinutes = (h2 * 60 + m2) - (h1 * 60 + m1);
+    if (totalMinutes < 0) totalMinutes += 24 * 60; // Cross-midnight wrap
+
+    if (totalMinutes < 15) {
+      durationStatus.className = 'text-error font-bold flex items-center gap-1';
+      durationStatus.innerHTML = `RN-04: Duración mínima: 15 min (actual: ${totalMinutes} min ❌)`;
+    } else {
+      durationStatus.className = 'text-emerald-400 font-bold flex items-center gap-1';
+      durationStatus.innerHTML = `Duración: ${totalMinutes} min ✔️ (RN-04 OK)`;
+    }
+  }
+
+  if (timeStart && timeEnd) {
+    timeStart.addEventListener('change', calculateDuration);
+    timeEnd.addEventListener('change', calculateDuration);
+  }
+
+  // Trigger Simulación de Conflicto RN-03
+  const btnTrigger = document.getElementById('btn-trigger-conflict');
+  const conflictToast = document.getElementById('conflict-toast');
+  const overlapBlock = document.getElementById('overlap-simulation-block');
+
+  if (btnTrigger && conflictToast) {
+    btnTrigger.addEventListener('click', () => {
+      // Toggle / highlight simulation block
+      if (overlapBlock) {
+        overlapBlock.classList.add('scale-105');
+        setTimeout(() => overlapBlock.classList.remove('scale-105'), 400);
+      }
+
+      // Show toast
+      conflictToast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      conflictToast.classList.add('translate-y-0', 'opacity-100');
+
+      // Auto dismiss after 4s
+      setTimeout(() => {
+        conflictToast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        conflictToast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    });
+  }
+
+  // Agregar participante dinámico
+  const btnAddPart = document.getElementById('btn-add-participant');
+  const inputNewPart = document.getElementById('input-new-participant');
+  const participantsList = document.getElementById('participants-list');
+
+  if (btnAddPart && inputNewPart && participantsList) {
+    btnAddPart.addEventListener('click', () => {
+      const email = inputNewPart.value.trim();
+      const rfcRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email && rfcRegex.test(email)) {
+        const tag = document.createElement('span');
+        tag.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 border border-primary-container/30 text-primary font-label-sm text-[10px]';
+        tag.innerHTML = `${email} <button type="button" class="hover:text-error transition-colors" onclick="this.parentElement.remove()"><span class="material-symbols-outlined text-[12px]">close</span></button>`;
+        participantsList.appendChild(tag);
+        inputNewPart.value = '';
+      } else {
+        inputNewPart.classList.add('border-error');
+        setTimeout(() => inputNewPart.classList.remove('border-error'), 1500);
+      }
+    });
+  }
+</script></main></div></body></html>

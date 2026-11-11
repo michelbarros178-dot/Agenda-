@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.gemini
+tests
+stitch_futuristic_3d_agenda_system
+*.log
+.data
+scratch
+start.bat
+

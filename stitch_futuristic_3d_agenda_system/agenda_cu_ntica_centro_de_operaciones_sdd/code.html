@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#6900b3","tertiary-container":"#ffcdcf","surface-dim":"#0e131f","surface-tint":"#00dbe9","surface-container-lowest":"#080e1a","tertiary-fixed-dim":"#ffb2b7","primary-fixed":"#7df4ff","surface-container-low":"#161c28","inverse-on-surface":"#2b303d","surface-variant":"#2f3542","inverse-surface":"#dde2f3","on-error":"#690005","error-container":"#93000a","on-tertiary-container":"#bc0b3b","surface":"#0e131f","on-primary-fixed":"#002022","on-error-container":"#ffdad6","on-secondary-container":"#d6a9ff","on-surface-variant":"#b9cacb","surface-container-highest":"#2f3542","on-secondary-fixed":"#2c0051","outline":"#849495","secondary":"#ddb7ff","secondary-container":"#6f00be","surface-container-high":"#242a36","outline-variant":"#3b494b","inverse-primary":"#006970","on-primary-container":"#006970","on-secondary":"#490080","on-tertiary-fixed-variant":"#92002a","background":"#0e131f","on-tertiary-fixed":"#40000d","on-surface":"#dde2f3","primary":"#dbfcff","secondary-fixed-dim":"#ddb7ff","primary-container":"#00f0ff","on-tertiary":"#67001b","surface-bright":"#343946","secondary-fixed":"#f0dbff","surface-container":"#1a202c","error":"#ffb4ab","tertiary-fixed":"#ffdadb","on-primary":"#00363a","primary-fixed-dim":"#00dbe9","on-primary-fixed-variant":"#004f54","on-background":"#dde2f3","tertiary":"#fff3f2"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","margin":"2rem","space-xl":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","gutter-mobile":"1rem"},fontFamily:{"label-lg":["JetBrains Mono"],"body-lg":["Space Grotesk"],"headline-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"label-sm":["JetBrains Mono"],"display-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"body-sm":["Space Grotesk"],"body-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"headline-md":["Space Grotesk"]},fontSize:{"label-lg":["0.875rem",{"lineHeight":"1.4","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.6","letterSpacing":"0","fontWeight":"400"}],"headline-lg":["2rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["0.625rem",{"lineHeight":"1.2","letterSpacing":"0.12em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1.3","letterSpacing":"0.08em","fontWeight":"500"}],"body-sm":["0.8125rem",{"lineHeight":"1.45","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.4","letterSpacing":"0","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between py-space-lg shadow-[0_0_30px_rgba(0,0,0,0.5)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container shadow-[0_0_15px_rgba(0,240,255,0.3)]"><span class="material-symbols-outlined text-[20px]">radar</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">CHRONO·CORE</span><span class="font-label-sm text-label-sm text-on-surface-variant">MISSION CONTROL SYS</span></div></div><div class="px-space-md flex flex-col gap-space-xs"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-widest text-outline">TELEMETRÍA &amp; NAVEGACIÓN</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="agenda-cuantica" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Agenda Cuántica</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="gestor-de-tareas" href="#"><span class="material-symbols-outlined text-[18px]">task_alt</span><span>Gestor de Tareas</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="compromisos-y-traslapes" href="#"><span class="material-symbols-outlined text-[18px]">merge_type</span><span>Compromisos &amp; Traslapes</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="suite-de-pruebas-sdd" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span>Suite de Pruebas SDD</span></a></nav></div></div><div class="px-space-lg flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span>UPLINK TELEMETRY</span><span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span></div><div class="font-label-sm text-label-sm text-primary">NODE: ORBITAL-ALPHA-7</div><div class="font-label-sm text-label-sm text-outline">LATENCY: 0.14ms SYNCHRONIZED</div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-2xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_12px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-semibold tracking-wide text-primary">CHRONO·CORE</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed">SDD v1.0.0</span></div><div class="hidden xl:flex items-center gap-space-sm pl-space-md"><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>CLEAN ARCHITECTURE</span><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary-fixed-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>STRICT TYPESCRIPT</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span><span>T-STAMP: 2026.04.18 // 14:02:49 UTC</span></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,240,255,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg flex flex-col gap-space-lg w-full max-w-[1720px] mx-auto">
+<!-- TOP TELEMETRY STRIP / QUICK HUD -->
+<div class="w-full flex flex-wrap items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-xl shadow-surface-container-lowest/60">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high text-primary-fixed">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container shadow-sm animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider">MATRIZ TEMPORAL V4.2</span>
+</div>
+<div class="h-4 w-px bg-surface-variant hidden sm:block"></div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>SDD SPEC: DOMAIN DRIVEN DESIGN // STRICT MODE</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-sm py-1 rounded bg-surface-container-high/80 text-on-surface-variant font-label-sm text-label-sm">
+<span>EVENT LOOP:</span>
+<span class="text-primary-fixed font-semibold ml-1">SYNC 100%</span>
+</div>
+<div class="px-space-sm py-1 rounded bg-secondary-container/30 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>RN-01..RN-05 GUARDS ENABLED</span>
+</div>
+</div>
+</div>
+<!-- 1. HERO DE MONITOREO CUÁNTICO 3D -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-lowest shadow-2xl">
+<!-- Ambient Glow Pods behind 3D Scene -->
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-primary-container/10 blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-[120px] pointer-events-none"></div>
+<!-- ThreeJS Scene Container as strictly requested -->
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="w-full h-80 rounded-2xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.15)] bg-slate-950/60 backdrop-blur-xl relative" -->
+<div class="w-full h-80 rounded-2xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.15)] bg-slate-950/60 backdrop-blur-xl relative" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  const container = document.getElementById('threejs-canvas-container') || document.body;
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
+camera.position.set(0, 0, 18);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+container.appendChild(renderer.domElement);
+
+// Luz ambiente y puntual neón
+const ambientLight = new THREE.AmbientLight(0x0f172a, 1.5);
+scene.add(ambientLight);
+
+const cyanPoint = new THREE.PointLight(0x00f0ff, 3, 50);
+cyanPoint.position.set(10, 10, 10);
+scene.add(cyanPoint);
+
+const violetPoint = new THREE.PointLight(0xa855f7, 3, 50);
+violetPoint.position.set(-10, -10, 8);
+scene.add(violetPoint);
+
+// Grid 3D de perspectiva isométrica espacial
+const gridHelper = new THREE.GridHelper(50, 40, 0x00f0ff, 0x1e293b);
+gridHelper.position.y = -7;
+gridHelper.rotation.x = 0.2;
+scene.add(gridHelper);
+
+// Grupo interactivo de nodos holográficos de la Agenda
+const nodesGroup = new THREE.Group();
+scene.add(nodesGroup);
+
+// Nodo Central Octaédrico (Núcleo de Planificación Cuántica)
+const coreGeo = new THREE.OctahedronGeometry(2.8, 0);
+const coreMat = new THREE.MeshPhongMaterial({
+  color: 0x00f0ff,
+  wireframe: true,
+  emissive: 0x083344,
+  shininess: 100
+});
+const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+nodesGroup.add(coreMesh);
+
+// Anillo orbital exterior
+const ringGeo = new THREE.TorusGeometry(5.2, 0.05, 16, 100);
+const ringMat = new THREE.MeshBasicMaterial({ color: 0x8b5cf6, transparent: true, opacity: 0.6 });
+const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+ringMesh.rotation.x = Math.PI / 2.3;
+nodesGroup.add(ringMesh);
+
+// Nodos orbitales de tareas y compromisos (esferas flotantes)
+const orbitalNodes = [];
+const nodeCount = 14;
+const sphereGeo = new THREE.SphereGeometry(0.35, 16, 16);
+
+for (let i = 0; i < nodeCount; i++) {
+  const angle = (i / nodeCount) * Math.PI * 2;
+  const radius = 6.5 + (i % 3) * 1.5;
+  const isHighPriority = i % 4 === 0;
+  
+  const sphereMat = new THREE.MeshPhongMaterial({
+    color: isHighPriority ? 0xf43f5e : (i % 2 === 0 ? 0x00f0ff : 0xa855f7),
+    emissive: isHighPriority ? 0xe11d48 : 0x06b6d4,
+    shininess: 80
+  });
+
+  const node = new THREE.Mesh(sphereGeo, sphereMat);
+  node.userData = {
+    angle: angle,
+    speed: 0.004 + (i % 5) * 0.002,
+    radius: radius,
+    yOffset: (Math.sin(i * 1.8) * 3)
+  };
+  orbitalNodes.push(node);
+  nodesGroup.add(node);
+}
+
+// Partículas estelares en el fondo
+const starsGeo = new THREE.BufferGeometry();
+const starCount = 350;
+const starPos = new Float32Array(starCount * 3);
+
+for (let i = 0; i < starCount * 3; i += 3) {
+  starPos[i] = (Math.random() - 0.5) * 80;
+  starPos[i + 1] = (Math.random() - 0.5) * 60;
+  starPos[i + 2] = (Math.random() - 0.5) * 40 - 10;
+}
+starsGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+const starsMat = new THREE.PointsMaterial({ color: 0x38bdf8, size: 0.15, transparent: true, opacity: 0.7 });
+const starField = new THREE.Points(starsGeo, starsMat);
+scene.add(starField);
+
+// Interacción con mouse
+let mouseX = 0;
+let mouseY = 0;
+window.addEventListener('mousemove', (e) => {
+  mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+  mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+// Responsive resize
+window.addEventListener('resize', () => {
+  const newW = container.clientWidth || window.innerWidth;
+  const newH = container.clientHeight || window.innerHeight;
+  camera.aspect = newW / newH;
+  camera.updateProjectionMatrix();
+  renderer.setSize(newW, newH);
+});
+
+// Render loop
+let clock = 0;
+function animate() {
+  requestAnimationFrame(animate);
+  clock += 0.015;
+
+  coreMesh.rotation.x += 0.008;
+  coreMesh.rotation.y += 0.012;
+  ringMesh.rotation.z += 0.005;
+
+  // Actualizar posiciones orbitales
+  orbitalNodes.forEach((node) => {
+    node.userData.angle += node.userData.speed;
+    node.position.x = Math.cos(node.userData.angle) * node.userData.radius;
+    node.position.z = Math.sin(node.userData.angle) * node.userData.radius;
+    node.position.y = node.userData.yOffset + Math.sin(clock * 1.5 + node.userData.angle) * 0.8;
+  });
+
+  // Efecto suave de inclinación con mouse
+  nodesGroup.rotation.y += (mouseX * 0.4 - nodesGroup.rotation.y) * 0.05;
+  nodesGroup.rotation.x += (-mouseY * 0.3 - nodesGroup.rotation.x) * 0.05;
+
+  gridHelper.position.z = (clock * 1.5) % 2;
+
+  renderer.render(scene, camera);
+}
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+<!-- Glassmorphic HUD Overlays Over Orbit Constellation -->
+<div class="absolute inset-0 pointer-events-none p-space-md sm:p-space-lg flex flex-col justify-between">
+<!-- Top Row HUD -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="pointer-events-auto px-space-md py-space-xs rounded-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">hub</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">CONSTELACIÓN TEMPORAL</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide">ÓRBITA CUÁNTICA ACTIVA</span>
+</div>
+</div>
+<div class="pointer-events-auto px-space-md py-space-xs rounded-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-wider">TYPESCRIPT 5.x STRICT: ACTIVE | RN-01..05 ENFORCED</span>
+</div>
+</div>
+<!-- Bottom Row Telemetry Stats & Action Controls -->
+<div class="flex flex-wrap items-end justify-between gap-space-md">
+<div class="flex flex-wrap gap-space-sm pointer-events-auto">
+<!-- Stat 1: Tasks -->
+<div class="px-space-md py-space-sm rounded-xl bg-surface-container-low/90 backdrop-blur-xl shadow-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tareas Activas</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface" id="heroTaskCount">8</span>
+<span class="font-label-xs text-error font-semibold">(2 Críticas)</span>
+<span class="font-label-xs text-secondary-fixed-dim font-semibold">• 3 Altas</span>
+</div>
+</div>
+</div>
+<!-- Stat 2: Commitments -->
+<div class="px-space-md py-space-sm rounded-xl bg-surface-container-low/90 backdrop-blur-xl shadow-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Compromisos Agendados</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface" id="heroCommitmentCount">5</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Sin traslapes detectados</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-sm pointer-events-auto">
+<button class="px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider flex items-center gap-space-xs shadow-lg shadow-primary-container/20 hover:scale-105 active:scale-95 transition-all" onclick="scrollToElement('panel-tasks')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>+ Nueva Tarea Rápida</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-secondary-container/40 text-secondary font-label-md text-label-md font-bold uppercase tracking-wider flex items-center gap-space-xs shadow-lg hover:bg-secondary-container/60 hover:scale-105 active:scale-95 transition-all" onclick="scrollToElement('panel-commitments')">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>+ Agendar Compromiso</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. PANEL DE DOS COLUMNAS HOLOGRÁFICAS -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg w-full">
+<!-- COLUMNA IZQUIERDA: GESTOR DE TAREAS (TaskService Clean Architecture) -->
+<section class="flex flex-col gap-space-md p-space-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-2xl relative" id="panel-tasks">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">CLEAN ARCHITECTURE: TASKSERVICE</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Gestor de Tareas Cuánticas</h2>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono">SPEC: DDD-ENT-01</span>
+</div>
+<!-- Alerta Dinámica: Tareas Vencidas (getPendingTasksOverdue) -->
+<div class="p-space-md rounded-xl bg-error-container/30 text-on-surface shadow-md flex items-center justify-between" id="overdueAlertBox">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px] animate-bounce">warning</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-error uppercase tracking-wider flex items-center gap-2">
+<span>TAREAS VENCIDAS DETECTADAS [getPendingTasksOverdue]</span>
+<span class="inline-block w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">1 tarea requiere resolución inmediata de SLA en orbital alpha.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-1 rounded bg-error-container text-error font-mono font-bold">1 OVERDUE</span>
+</div>
+<!-- Formulario Futurista con Validación en Vivo -->
+<form class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-space-md shadow-inner" id="createTaskForm" onsubmit="handleCreateTask(event)">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Nueva Asignación Temporal</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">RN-01 CHECKER RUNNING</span>
+</div>
+<!-- Título con Contador Máximo 100 Caracteres -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Título de Tarea</label>
+<span class="font-label-sm text-label-sm text-outline font-mono" id="taskTitleCounter">0 / 100</span>
+</div>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner" id="taskTitleInput" maxlength="100" oninput="updateTaskTitleCounter(this)" placeholder="Ej: Recalibrar sensor hiperlumínico de proa..." required="" type="text"/>
+</div>
+<!-- Descripción con Contador Máximo 500 Caracteres -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Descripción Técnica</label>
+<span class="font-label-sm text-label-sm text-outline font-mono" id="taskDescCounter">0 / 500</span>
+</div>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner resize-none" id="taskDescInput" maxlength="500" oninput="updateTaskDescCounter(this)" placeholder="Detalles sobre vectores de ajuste, logs esperados y tolerancias de deriva..." rows="2"></textarea>
+</div>
+<!-- Fecha de Vencimiento con Guard RN-01 en Tiempo Real -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Fecha de Vencimiento (UTC)</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner" id="taskDueDateInput" onchange="validateTaskDueDateRN01(this)" required="" type="datetime-local"/>
+<div class="hidden mt-1 text-error font-label-sm text-label-sm flex items-center gap-1" id="rn01ErrorMsg">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>RN-01 VIOLADA: Prohibido agendar en el pasado.</span>
+</div>
+</div>
+<!-- Selector de Prioridad con Neon Pills -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Nivel de Prioridad</label>
+<div class="grid grid-cols-4 gap-1 p-1 bg-surface-container-lowest rounded-lg">
+<button class="py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all text-outline hover:text-on-surface" id="prio-BAJA" onclick="selectPriority('BAJA')" type="button">BAJA</button>
+<button class="py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all text-outline hover:text-on-surface" id="prio-MEDIA" onclick="selectPriority('MEDIA')" type="button">MEDIA</button>
+<button class="py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all bg-surface-container-high text-secondary-fixed shadow-sm" id="prio-ALTA" onclick="selectPriority('ALTA')" type="button">ALTA</button>
+<button class="py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all text-outline hover:text-error" id="prio-CRITICA" onclick="selectPriority('CRITICA')" type="button">CRÍTICA</button>
+</div>
+<input id="selectedPriorityInput" type="hidden" value="ALTA"/>
+</div>
+</div>
+<!-- Tags y Botón Submit -->
+<div class="flex items-center justify-between pt-1 gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary-fixed">#TELEMETRY</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-secondary">#ORBITAL</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-outline font-mono">+ADD TAG</span>
+</div>
+<button class="px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider flex items-center gap-space-xs hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all" id="submitTaskBtn" type="submit">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Guardar Tarea</span>
+</button>
+</div>
+</form>
+<!-- Lista de Tareas Activas y Demostración RN-02 -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Cola de Ejecución Activa (TaskRepository)</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">DEMO RN-02: INMUTABILIDAD EN COMPLETADA</span>
+</div>
+<!-- Tareas Container -->
+<div class="flex flex-col gap-space-sm max-h-[360px] overflow-y-auto pr-1" id="taskListContainer">
+<!-- Card 1: Vencida / Alerta -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-l-4 border-error flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Inspección de bobinas magnéticas de compresión</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-bold uppercase">CRÍTICA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Revisar gradiente térmico de núcleos criogénicos A-1 y A-2.</p>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+<span class="font-label-sm text-label-sm text-error font-mono flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">alarm</span>
+<span>VENCIDA: 2026.04.18 10:00 UTC (-4h)</span>
+</span>
+<div class="flex items-center gap-1">
+<button class="px-space-xs py-1 rounded bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm text-label-sm" onclick="setTaskState(1, 'EN_PROCESO')">Iniciar</button>
+<button class="px-space-xs py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold" onclick="setTaskState(1, 'COMPLETADA')">Completar</button>
+</div>
+</div>
+</div>
+<!-- Card 2: DEMO RN-02: Tarea en COMPLETADA (Bloqueo Reversión) -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-l-4 border-primary-fixed-dim flex flex-col gap-space-xs shadow-md relative group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">check_circle</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface line-through opacity-80">Sincronización de reloj atómico orbital con Greenwich</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim font-label-sm text-label-sm font-bold uppercase">COMPLETADA</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Deriva cuadrática compensada a cero absoluto.</p>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-mono">ESTADO FINAL TERMINAL (INMUTABLE)</span>
+<!-- Botones bloqueados con tooltip de RN-02 -->
+<div class="flex items-center gap-1 relative">
+<button class="px-space-xs py-1 rounded bg-surface-container-highest/40 text-outline cursor-not-allowed font-label-sm text-label-sm flex items-center gap-1 opacity-50" disabled="" title="RN-02: Transición prohibida por especificación inmutable. Una vez COMPLETADA no puede volver a PENDIENTE ni EN_PROCESO.">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span>Reabrir a Pendiente</span>
+</button>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-mono cursor-help" title="RN-02 Enforcement activo">RN-02 GUARD</span>
+</div>
+</div>
+</div>
+<!-- Card 3: En Proceso -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-l-4 border-secondary flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Depuración de buffer de telemetría cuántica en nodo Beta</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold uppercase">ALTA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Filtrado de paquetes anómalos provenientes del radiotelescopio.</p>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">VENCE: 2026.04.18 18:30 UTC</span>
+<div class="flex items-center gap-1">
+<button class="px-space-xs py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold" onclick="setTaskState(3, 'COMPLETADA')">Completar</button>
+<button class="px-space-xs py-1 rounded bg-surface-container-high text-error font-label-sm text-label-sm" onclick="setTaskState(3, 'CANCELADA')">Cancelar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COLUMNA DERECHA: COMPROMISOS & TRASLAPES (CommitmentService) -->
+<section class="flex flex-col gap-space-md p-space-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-2xl relative" id="panel-commitments">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">COMMITMENTSERVICE // SCHEDULER</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Compromisos &amp; Detección de Traslapes</h2>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono">SPEC: DDD-ENT-02</span>
+</div>
+<!-- RADAR / TIMELINE VISUAL DE TRASLAPES (GANTT CYBERNETIC) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-[16px]">view_timeline</span>
+<span>Gantt Holográfico de Ventana Temporal (Hoy 13:00 - 18:00 UTC)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">REGLA RN-03 &amp; RN-04 CHECK</span>
+</div>
+<!-- Radar Bar Timeline Canvas -->
+<div class="relative w-full h-16 bg-surface-container-lowest rounded-lg p-2 flex items-center overflow-hidden">
+<!-- Timeline hours marks -->
+<div class="absolute inset-0 flex justify-between px-3 text-[10px] font-mono text-outline/50 pointer-events-none items-end pb-1">
+<span>13:00</span>
+<span>14:00</span>
+<span>15:00</span>
+<span>16:00</span>
+<span>17:00</span>
+<span>18:00</span>
+</div>
+<!-- Existing Commitment: 14:00 to 15:30 (Bloque Base) -->
+<div class="absolute left-[20%] w-[30%] h-8 rounded bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm border-l-2 border-primary-container shadow-md">
+<span class="truncate px-2">14:00-15:30 Bloque Base Alfa</span>
+</div>
+<!-- Existing Commitment 2: 16:30 to 17:30 -->
+<div class="absolute left-[70%] w-[20%] h-8 rounded bg-surface-container-high text-secondary flex items-center justify-center font-label-sm text-label-sm border-l-2 border-secondary shadow-md">
+<span class="truncate px-2">16:30-17:30 Sync Orbital</span>
+</div>
+<!-- Conflict Projection Layer (Dynamic) -->
+<div class="absolute left-[35%] w-[25%] h-8 rounded bg-error-container/80 text-error flex items-center justify-center font-label-sm text-label-sm font-bold border-2 border-error animate-pulse shadow-lg hidden" id="radarConflictGhost">
+<span class="truncate px-1">RN-03: TRASLAPE DETECTADO</span>
+</div>
+</div>
+<!-- Regla Explicativa Visual RN-03 -->
+<div class="px-space-sm py-1 rounded bg-surface-container-lowest flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span class="text-secondary">RN-03 ALGORITHM:</span>
+<span>(NuevoInicio &lt; ExistenteFin) &amp;&amp; (NuevoFin &gt; ExistenteInicio)</span>
+</div>
+</div>
+<!-- Formulario de Agendamiento de Compromisos -->
+<form class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-space-md shadow-inner" id="createCommitmentForm" onsubmit="handleCreateCommitment(event)">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Agendar Bloque de Tiempo</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary-fixed-dim font-label-sm text-label-sm font-mono" id="rn03LiveBadge">SIN CONFLICTO</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Título -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Título del Compromiso</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-inner" id="commTitleInput" placeholder="Ej: Calibración de Malla Cuántica" required="" type="text"/>
+</div>
+<!-- Creador (ID / Email) -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Creador (ID/Email)</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-inner" id="commCreatorInput" required="" type="email" value="commander@chronocore.space"/>
+</div>
+</div>
+<!-- Rango Temporal y Verificador RN-04 (Mínimo 15 minutos) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Fecha/Hora Inicio (UTC)</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-inner" id="commStartInput" onchange="evaluateCommitmentConstraints()" required="" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Fecha/Hora Fin (UTC)</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-inner" id="commEndInput" onchange="evaluateCommitmentConstraints()" required="" type="datetime-local"/>
+</div>
+</div>
+<!-- Alerta RN-04 y RN-03 en tiempo real -->
+<div class="hidden p-space-sm rounded-lg font-label-sm text-label-sm flex items-center gap-2" id="commRuleAlert"></div>
+<!-- Participantes y Validador RFC 5322 (RN-05) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Participantes (Emails separados por coma)</label>
+<span class="font-label-sm text-label-sm text-outline font-mono" id="rn05ValidatorStatus">RFC 5322 CHECKER</span>
+</div>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-secondary shadow-inner" id="commParticipantsInput" oninput="validateParticipantsRFC5322(this)" placeholder="pilot@station.io, scientist@chronocore.space" type="text"/>
+<div class="hidden text-error font-label-sm text-label-sm flex items-center gap-1 mt-1" id="rn05ErrorMsg">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span>RN-05 VIOLADA: Uno o más correos no cumplen el estándar RFC 5322.</span>
+</div>
+</div>
+<!-- Botón de Agendamiento -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline font-mono">CommitmentService.createCommitment()</span>
+<button class="px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold uppercase tracking-wider flex items-center gap-space-xs hover:shadow-[0_0_15px_rgba(221,183,255,0.4)] transition-all" id="submitCommitmentBtn" type="submit">
+<span class="material-symbols-outlined text-[16px]">more_time</span>
+<span>Agendar Compromiso</span>
+</button>
+</div>
+</form>
+<!-- Lista de Compromisos con Cancelación (cancelCommitment) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Compromisos Vigentes</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ID / ENTITY REGISTRY</span>
+</div>
+<div class="flex flex-col gap-space-sm max-h-[220px] overflow-y-auto pr-1" id="commitmentListContainer">
+<!-- Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">14:00 - 15:30 UTC // Calibración de Núcleo Alfa</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>CREADOR: commander@chronocore.space</span>
+<span>PARTICIPANTES: 3 NODOS</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-error-container/30 text-error hover:bg-error-container/60 font-label-sm text-label-sm transition-all flex items-center gap-1" onclick="cancelCommitment(this, 'Calibración de Núcleo Alfa')">
+<span class="material-symbols-outlined text-[14px]">event_busy</span>
+<span>Cancelar</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">16:30 - 17:30 UTC // Sync Orbital con Estación Gateway</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+<span>CREADOR: officer.val@station.io</span>
+<span>PARTICIPANTES: 5 NODOS</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-error-container/30 text-error hover:bg-error-container/60 font-label-sm text-label-sm transition-all flex items-center gap-1" onclick="cancelCommitment(this, 'Sync Orbital')">
+<span class="material-symbols-outlined text-[14px]">event_busy</span>
+<span>Cancelar</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 3. CONSOLA DE TELEMETRÍA Y SUITE DE PRUEBAS UNITARIAS (SDD ENFORCEMENT) -->
+<div class="w-full rounded-2xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-2xl p-space-lg flex flex-col gap-space-md border border-surface-container-high">
+<!-- Header de la Terminal -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="ml-2 font-label-md text-label-md text-primary font-mono font-semibold">CONSOLE &gt; npx jest --verbose --testPathPattern=domain</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="px-space-md py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase flex items-center gap-1 hover:scale-105 active:scale-95 transition-all" onclick="runUnitTestsSim()">
+<span class="material-symbols-outlined text-[15px]">play_arrow</span>
+<span>Re-ejecutar Suite SDD</span>
+</button>
+<a class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:text-primary transition-all flex items-center gap-1" href="#" onclick="alert('Abriendo especificación formal SDD design.md en visor cuántico'); return false;">
+<span class="material-symbols-outlined text-[15px]">description</span>
+<span>Ver design.md</span>
+</a>
+</div>
+</div>
+<!-- Métricas Resumen de Tests -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">TEST SUITES</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">5 passed, 5 total</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">TESTS UNITARIOS</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-fixed-dim">18 passed, 18 total</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">COBERTURA STMT</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">100% (Clean Domain)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">LATENCIA TESTS</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">42 ms (Total)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SDD STATUS</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">VERIFIED</span>
+</div>
+</div>
+<!-- Logs de Ejecución de las 5 Reglas de Negocio -->
+<div class="p-space-md rounded-xl bg-surface-container-low font-mono text-label-sm space-y-2 overflow-x-auto shadow-inner text-on-surface">
+<!-- RN-01 -->
+<div class="flex items-center justify-between py-1 border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-bold">PASS</span>
+<span class="text-on-surface font-semibold">TaskService &gt; RN-01: Prohibición estricta de dueDate en el pasado</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Caso límite: Now - 1ms =&gt; throws PastDueDateException</span>
+<span class="text-primary-fixed-dim">2 ms</span>
+</div>
+</div>
+<!-- RN-02 -->
+<div class="flex items-center justify-between py-1 border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-bold">PASS</span>
+<span class="text-on-surface font-semibold">TaskService &gt; RN-02: Inmutabilidad de estado COMPLETADA</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Caso límite: transition(COMPLETED -&gt; IN_PROGRESS) =&gt; throws InvalidStateTransitionException</span>
+<span class="text-primary-fixed-dim">1 ms</span>
+</div>
+</div>
+<!-- RN-03 -->
+<div class="flex items-center justify-between py-1 border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-bold">PASS</span>
+<span class="text-on-surface font-semibold">CommitmentService &gt; RN-03: Detección y rechazo de solapamiento temporal</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Caso límite: Extremos contiguos (End == NextStart) =&gt; NO solapa (PASS)</span>
+<span class="text-primary-fixed-dim">3 ms</span>
+</div>
+</div>
+<!-- RN-04 -->
+<div class="flex items-center justify-between py-1 border-b border-surface-container-high/40">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-bold">PASS</span>
+<span class="text-on-surface font-semibold">CommitmentService &gt; RN-04: Duración mínima garantizada de 15 minutos</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Caso límite: Duración de 14 min 59 seg =&gt; throws MinimumDurationViolationException</span>
+<span class="text-primary-fixed-dim">1 ms</span>
+</div>
+</div>
+<!-- RN-05 -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-bold">PASS</span>
+<span class="text-on-surface font-semibold">CommitmentService &gt; RN-05: Validación de participantes según RFC 5322</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>Caso límite: "user@domain..com", sin '@', símbolos prohibidos =&gt; throws InvalidParticipantEmailException</span>
+<span class="text-primary-fixed-dim">2 ms</span>
+</div>
+</div>
+</div>
+<!-- Terminal Output Footer -->
+<div class="flex items-center justify-between text-outline font-mono font-label-sm text-label-sm pt-space-xs">
+<span>Ran all test suites matching /spec-sdd/i in 1.487s. Strict null checks enabled.</span>
+<span class="text-primary-fixed-dim font-semibold">ALL CONTRACTS FULFILLED</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Utility: Smooth Scroll to Target Element
+  function scrollToElement(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Task Form Counters
+  function updateTaskTitleCounter(input) {
+    const counter = document.getElementById('taskTitleCounter');
+    counter.textContent = `${input.value.length} / 100`;
+    if (input.value.length >= 100) {
+      counter.classList.add('text-error');
+    } else {
+      counter.classList.remove('text-error');
+    }
+  }
+
+  function updateTaskDescCounter(input) {
+    const counter = document.getElementById('taskDescCounter');
+    counter.textContent = `${input.value.length} / 500`;
+  }
+
+  // Priority Selection
+  function selectPriority(level) {
+    const priorities = ['BAJA', 'MEDIA', 'ALTA', 'CRITICA'];
+    document.getElementById('selectedPriorityInput').value = level;
+
+    priorities.forEach(p => {
+      const btn = document.getElementById(`prio-${p}`);
+      if (p === level) {
+        btn.className = 'py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all shadow-sm ';
+        if (p === 'CRITICA') {
+          btn.className += 'bg-error-container text-error shadow-error/40';
+        } else if (p === 'ALTA') {
+          btn.className += 'bg-surface-container-high text-secondary-fixed';
+        } else {
+          btn.className += 'bg-primary-container text-on-primary-container';
+        }
+      } else {
+        btn.className = 'py-1.5 rounded font-label-sm text-label-sm font-bold uppercase transition-all text-outline hover:text-on-surface';
+      }
+    });
+  }
+
+  // RN-01 Live Validation (Past Date Check)
+  function validateTaskDueDateRN01(input) {
+    const errorEl = document.getElementById('rn01ErrorMsg');
+    const submitBtn = document.getElementById('submitTaskBtn');
+    if (!input.value) return true;
+
+    const selectedTime = new Date(input.value).getTime();
+    const nowTime = new Date().getTime();
+
+    if (selectedTime < nowTime) {
+      errorEl.classList.remove('hidden');
+      input.classList.add('border', 'border-error');
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      return false;
+    } else {
+      errorEl.classList.add('hidden');
+      input.classList.remove('border', 'border-error');
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      return true;
+    }
+  }
+
+  // State Transition Mock for Tasks
+  function setTaskState(taskId, newState) {
+    alert(`Task #${taskId} transicionada a ${newState} a través de TaskService.transitionState()`);
+  }
+
+  // Create Task Handler
+  function handleCreateTask(e) {
+    e.preventDefault();
+    const title = document.getElementById('taskTitleInput').value.trim();
+    const dueDateInput = document.getElementById('taskDueDateInput');
+
+    if (!validateTaskDueDateRN01(dueDateInput)) {
+      alert('Error RN-01: No puedes agendar una tarea con fecha en el pasado.');
+      return;
+    }
+
+    const priority = document.getElementById('selectedPriorityInput').value;
+    const taskList = document.getElementById('taskListContainer');
+
+    const newCard = document.createElement('div');
+    newCard.className = 'p-space-md rounded-xl bg-surface-container-low border-l-4 border-primary-container flex flex-col gap-space-xs shadow-md animate-fade-in';
+    newCard.innerHTML = `
+      <div class="flex items-start justify-between">
+        <div class="flex items-center gap-space-sm">
+          <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          <span class="font-body-md text-body-md font-semibold text-on-surface">${title}</span>
+        </div>
+        <span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim font-label-sm text-label-sm font-bold uppercase">${priority}</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">Nueva orden sincronizada en el cluster orbital.</p>
+      <div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+        <span class="font-label-sm text-label-sm text-primary-fixed-dim font-mono">ESTADO: PENDIENTE</span>
+        <div class="flex items-center gap-1">
+          <button onclick="setTaskState(Date.now(), 'EN_PROCESO')" class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Iniciar</button>
+          <button onclick="setTaskState(Date.now(), 'COMPLETADA')" class="px-space-xs py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">Completar</button>
+        </div>
+      </div>
+    `;
+
+    taskList.insertBefore(newCard, taskList.firstChild);
+    e.target.reset();
+    document.getElementById('taskTitleCounter').textContent = '0 / 100';
+    document.getElementById('taskDescCounter').textContent = '0 / 500';
+
+    const countEl = document.getElementById('heroTaskCount');
+    if (countEl) countEl.textContent = parseInt(countEl.textContent || '8') + 1;
+  }
+
+  // Commitment Constraints Check (RN-03 and RN-04)
+  function evaluateCommitmentConstraints() {
+    const startInput = document.getElementById('commStartInput');
+    const endInput = document.getElementById('commEndInput');
+    const alertBox = document.getElementById('commRuleAlert');
+    const badge = document.getElementById('rn03LiveBadge');
+    const radarConflict = document.getElementById('radarConflictGhost');
+    const submitBtn = document.getElementById('submitCommitmentBtn');
+
+    if (!startInput.value || !endInput.value) return;
+
+    const start = new Date(startInput.value).getTime();
+    const end = new Date(endInput.value).getTime();
+
+    // RN-04 Check: Min 15 mins
+    const diffMinutes = (end - start) / (1000 * 60);
+
+    if (diffMinutes < 15) {
+      alertBox.className = 'p-space-sm rounded-lg font-label-sm text-label-sm flex items-center gap-2 bg-error-container text-error';
+      alertBox.innerHTML = '<span class="material-symbols-outlined text-[16px]">timer_off</span><span>RN-04 VIOLADA: La duración debe ser de al menos 15 minutos (Actual: ' + Math.max(0, Math.round(diffMinutes)) + ' min).</span>';
+      alertBox.classList.remove('hidden');
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      return;
+    }
+
+    // RN-03 Check Simulation:
+    // Existing base block simulated: 14:00 to 15:30 today
+    const startHour = new Date(startInput.value).getHours();
+    const startMin = new Date(startInput.value).getMinutes();
+    const startTimeDecimal = startHour + startMin / 60;
+
+    const endHour = new Date(endInput.value).getHours();
+    const endMin = new Date(endInput.value).getMinutes();
+    const endTimeDecimal = endHour + endMin / 60;
+
+    const baseStart = 14.0;
+    const baseEnd = 15.5;
+
+    const hasOverlap = (startTimeDecimal < baseEnd) && (endTimeDecimal > baseStart);
+
+    if (hasOverlap) {
+      badge.textContent = 'CONFLICTO DETECTADO';
+      badge.className = 'px-2 py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-mono font-bold animate-pulse';
+      radarConflict.classList.remove('hidden');
+
+      alertBox.className = 'p-space-sm rounded-lg font-label-sm text-label-sm flex items-center gap-2 bg-error-container text-error';
+      alertBox.innerHTML = '<span class="material-symbols-outlined text-[16px]">merge_type</span><span>RN-03 SCHEDULE CONFLICT: Traslape detectado con el Bloque Base Alfa [14:00 - 15:30].</span>';
+      alertBox.classList.remove('hidden');
+
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    } else {
+      badge.textContent = 'SIN CONFLICTO';
+      badge.className = 'px-2 py-0.5 rounded bg-surface-container-high text-primary-fixed-dim font-label-sm text-label-sm font-mono';
+      radarConflict.classList.add('hidden');
+      alertBox.classList.add('hidden');
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+    }
+  }
+
+  // RN-05 RFC 5322 Strict Email Validation
+  function validateParticipantsRFC5322(input) {
+    const errorEl = document.getElementById('rn05ErrorMsg');
+    const statusEl = document.getElementById('rn05ValidatorStatus');
+    const submitBtn = document.getElementById('submitCommitmentBtn');
+
+    if (!input.value.trim()) {
+      errorEl.classList.add('hidden');
+      statusEl.textContent = 'RFC 5322 CHECKER';
+      statusEl.className = 'font-label-sm text-label-sm text-outline font-mono';
+      submitBtn.disabled = false;
+      return true;
+    }
+
+    // RFC 5322 simplified robust pattern
+    const rfc5322Regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+
+    const emails = input.value.split(',').map(e => e.trim()).filter(e => e.length > 0);
+    const allValid = emails.every(email => rfc5322Regex.test(email));
+
+    if (!allValid) {
+      errorEl.classList.remove('hidden');
+      statusEl.textContent = 'CORREO INVÁLIDO';
+      statusEl.className = 'font-label-sm text-label-sm text-error font-mono font-bold';
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      return false;
+    } else {
+      errorEl.classList.add('hidden');
+      statusEl.textContent = `${emails.length} VALIDADO(S) RFC 5322`;
+      statusEl.className = 'font-label-sm text-label-sm text-primary-fixed-dim font-mono';
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      return true;
+    }
+  }
+
+  // Create Commitment
+  function handleCreateCommitment(e) {
+    e.preventDefault();
+    const title = document.getElementById('commTitleInput').value.trim();
+    const list = document.getElementById('commitmentListContainer');
+
+    const newBlock = document.createElement('div');
+    newBlock.className = 'p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-md animate-fade-in';
+    newBlock.innerHTML = `
+      <div class="flex flex-col">
+        <div class="flex items-center gap-space-sm">
+          <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+          <span class="font-body-md text-body-md font-semibold text-on-surface">${title}</span>
+        </div>
+        <div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-on-surface-variant font-mono">
+          <span>CREADOR: commander@chronocore.space</span>
+          <span>ESTADO: CONFIRMADO</span>
+        </div>
+      </div>
+      <button onclick="cancelCommitment(this, '${title}')" class="px-space-sm py-1 rounded bg-error-container/30 text-error hover:bg-error-container/60 font-label-sm text-label-sm transition-all flex items-center gap-1">
+        <span class="material-symbols-outlined text-[14px]">event_busy</span>
+        <span>Cancelar</span>
+      </button>
+    `;
+    list.insertBefore(newBlock, list.firstChild);
+    e.target.reset();
+
+    const commCount = document.getElementById('heroCommitmentCount');
+    if (commCount) commCount.textContent = parseInt(commCount.textContent || '5') + 1;
+  }
+
+  // Cancel Commitment
+  function cancelCommitment(btn, title) {
+    if (confirm(`¿Confirmas la cancelación del compromiso: "${title}"? Se invocará cancelCommitment().`)) {
+      const parent = btn.closest('.p-space-md');
+      if (parent) {
+        parent.style.opacity = '0.3';
+        parent.style.pointerEvents = 'none';
+        btn.textContent = 'Cancelado';
+      }
+    }
+  }
+
+  // Unit Test Re-run Simulation
+  function runUnitTestsSim() {
+    alert('Iniciando Jest runner en subproceso WebWorker...\n✓ RN-01 validado\n✓ RN-02 inmutable verificado\n✓ RN-03 test de traslape pasado\n✓ RN-04 15-min guard verificado\n✓ RN-05 RFC 5322 estricto verificado.\nResultado: 100% PASS');
+  }
+
+  // Initialize Default Datetime Pickers to Future Values (avoid RN-01 violation on open)
+  window.addEventListener('DOMContentLoaded', () => {
+    const now = new Date();
+    const futureTask = new Date(now.getTime() + 60 * 60 * 1000);
+    const dueDateInput = document.getElementById('taskDueDateInput');
+    if (dueDateInput) {
+      dueDateInput.value = futureTask.toISOString().slice(0, 16);
+    }
+
+    const startCommit = new Date(now.getTime() + 120 * 60 * 1000);
+    const endCommit = new Date(now.getTime() + 150 * 60 * 1000);
+    const commStart = document.getElementById('commStartInput');
+    const commEnd = document.getElementById('commEndInput');
+    if (commStart) commStart.value = startCommit.toISOString().slice(0, 16);
+    if (commEnd) commEnd.value = endCommit.toISOString().slice(0, 16);
+  });
+</script></main></div></body></html>

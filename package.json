@@ -1,0 +1,26 @@
+{
+  "name": "chrono-core-quantum-agenda",
+  "version": "1.0.0",
+  "description": "Sistema de Agenda Cuántica 3D y Centro de Operaciones con Clean Architecture, Three.js y Capas de Seguridad",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/AgendaSuite.test.js"
+  },
+  "keywords": [
+    "quantum-agenda",
+    "threejs",
+    "clean-architecture",
+    "security",
+    "cybernetic",
+    "aether-void"
+  ],
+  "author": "ChronoCore Orbital Systems",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {}
+}
